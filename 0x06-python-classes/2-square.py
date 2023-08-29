@@ -4,7 +4,7 @@
 
 
 class Square:
-    """empty Square class"""
+    """Square class"""
     def __init__(self, size=0):
         """initiate the __size attribute
         verify if size provided is and integer
