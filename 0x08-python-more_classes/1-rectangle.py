@@ -14,7 +14,7 @@ class Rectangle:
     def width(self):
         """retrieve the rectangle's width"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """reset the width of the recangle"""
@@ -28,7 +28,7 @@ class Rectangle:
     def height(self):
         """retrieve the rectangle's height"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """reset the height of the recangle"""
