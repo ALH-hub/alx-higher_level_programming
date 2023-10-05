@@ -1,1 +1,0 @@
-python: more on inheritance.
