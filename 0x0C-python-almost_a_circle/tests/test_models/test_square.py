@@ -94,6 +94,7 @@ class TestSquare_x(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Square(1, 5.5)
 
+
 class TestSquare_y(unittest.TestCase):
     """testing y init"""
 
@@ -108,7 +109,6 @@ class TestSquare_y(unittest.TestCase):
     def test_float_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Square(1, 3, 5.5)
-
 
 
 class TestSquare_area(unittest.TestCase):
@@ -290,6 +290,7 @@ class TestSquare_to_dictionary(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         with self.assertRaises(TypeError):
             s.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()

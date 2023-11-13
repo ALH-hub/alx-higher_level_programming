@@ -97,6 +97,7 @@ class TestRectangle_width(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle(5.5, 1)
 
+
 class TestRectangle_y(unittest.TestCase):
     """Unittests for testing initialization of Rectangle y attribute."""
 
@@ -266,7 +267,6 @@ class TestRectangle_update_args(unittest.TestCase):
         r.update()
         self.assertEqual("[Rectangle] (10) 10/10 - 10/10", str(r))
 
-
     def test_update_args_five(self):
         r = Rectangle(10, 10, 10, 10, 10)
         r.update(89, 2, 3, 4, 5)
@@ -342,6 +342,6 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
 
+
 if __name__ == "__main__":
     unittest.main()
-

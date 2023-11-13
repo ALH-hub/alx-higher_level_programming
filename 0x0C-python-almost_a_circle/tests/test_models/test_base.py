@@ -75,7 +75,6 @@ class TestBase_to_json_string(unittest.TestCase):
         s = Square(10, 2, 3, 4)
         self.assertTrue(len(Base.to_json_string([s.to_dictionary()])) == 39)
 
-
     def test_to_json_string_empty_list(self):
         self.assertEqual("[]", Base.to_json_string([]))
 
