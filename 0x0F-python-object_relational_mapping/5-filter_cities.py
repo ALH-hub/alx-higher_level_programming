@@ -13,4 +13,5 @@ if __name__ == "__main__":
                 INNER JOIN `states` \
                    ON cities.state_id = states.id \
                 ORDER BY cities.id")
-    print(", ".join([row[2] for row in cur.fetchall() if row[4] == sys.argv[4]]))
+    print(", ".join([row[2] for row in cur.fetchall()
+                     if row[4] == sys.argv[4]]))
