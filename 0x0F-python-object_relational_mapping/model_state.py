@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from SQLAlchemy import Column, Integer, String
+from SQLAlchemy.ext.declarative import declarative_base
 
 
 mymeta = MetaData()
@@ -17,5 +17,5 @@ class State(Base):
     name (sqlalchemy.String): state's name
     """
     __tablename__ = "states"
-    id = Column(sqlalchemy.Integer, primary_key=True, unique=True, nullable=False)
-    name = Column(sqlalchemy.String(128), nullable=False)
+    id = Column(Integer, primary_key=True, unique=True, nullable=False)
+    name = Column(String(128), nullable=False)
