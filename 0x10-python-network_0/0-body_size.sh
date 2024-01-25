@@ -1,5 +1,5 @@
 #!/bin/bash
 #use curl to display the size of a request
 
-curl -s "$1" | wc -c
+response=$(curl -s -o /dev/null -w "%{size_download}\n" "$1")
 echo $response
